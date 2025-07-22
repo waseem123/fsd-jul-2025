@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,th,td{
+        table,
+        th,
+        td {
             border: 1px solid black;
             border-collapse: collapse;
             padding: 8px;
@@ -13,6 +16,7 @@
         }
     </style>
 </head>
+
 <body>
     <table>
         <thead>
@@ -21,66 +25,132 @@
                 <th>Name</th>
                 <th>City</th>
                 <th>Marks</th>
+                <th>Image</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>Alex</td>
-                <td>London</td>
+                <td rowspan="2">London</td>
                 <td>87</td>
+                <td>
+                    <img width="100px"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original"
+                        alt="">
+                </td>
+                <td>
+                    <a href="https://www.example.com">View More</a>
+                </td>
             </tr>
 
             <tr>
                 <td>2</td>
                 <td>John</td>
-                <td>California</td>
                 <td>78</td>
+                <td>
+                    <img width="100px"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original"
+                        alt="">
+                </td>
+                <td>
+                    <a href="https://www.example.com">View More</a>
+                </td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Alexandar</td>
-                <td>London</td>
+                <td rowspan="2">San Fransisco</td>
                 <td>84</td>
+                <td>
+                    <img width="100px"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original"
+                        alt="">
+                </td>
+                <td>
+                    <a href="https://www.example.com">View More</a>
+                </td>
             </tr>
 
             <tr>
                 <td>4</td>
                 <td>George</td>
-                <td>San Fransisco</td>
                 <td>68</td>
+                <td>
+                    <img width="100px"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original"
+                        alt="">
+                </td>
+                <td>
+                    <a href="https://www.example.com">View More</a>
+                </td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Peter</td>
-                <td>London</td>
+                <td rowspan="2">Solapur</td>
                 <td>83</td>
+                <td>
+                    <img width="100px"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original"
+                        alt="">
+                </td>
+                <td>
+                    <a href="https://www.example.com">View More</a>
+                </td>
             </tr>
 
             <tr>
                 <td>6</td>
                 <td>Waseem</td>
-                <td>Solapur</td>
                 <td>100</td>
+                <td>
+                    <img width="100px"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original"
+                        alt="">
+                </td>
+                <td>
+                    <a href="https://www.example.com">View More</a>
+                </td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>Miran</td>
-                <td>Mumbai</td>
+                <td rowspan="2">Mumbai</td>
                 <td>98</td>
+                <td>
+                    <img width="100px"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original"
+                        alt="">
+                </td>
+                <td>
+                    <a href="https://www.example.com">View More</a>
+                </td>
             </tr>
 
             <tr>
                 <td>8</td>
                 <td>Sarah</td>
-                <td>Varanasi</td>
                 <td>79</td>
+                <td>
+                    <a href="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original">
+                        <img width="100px"
+                        src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original"
+                        alt="">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1419411609-20240305012817824.jpg?c=original">View More</a>
+                </td>
             </tr>
         <tfoot>
             <tr>
-                <th>Total 8 Students</th>
+                <th colspan="3">Total 8 Students</th>
+                <th>650</th>
             </tr>
         </tfoot>
     </table>
 </body>
+
 </html>
