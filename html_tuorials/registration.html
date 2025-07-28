@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <form action="savedata" method="get">
+      <table>
+         <tr>
+            <td>Full Name</td>
+            <td><input type="text" placeholder="eg. Alexandar Pierce" required name="fullname"></td>
+         </tr>
+         <tr>
+            <td>Mobile Number</td>
+            <td><input type="tel" required maxlength="10" minlength="10" name="mobileno"></td>
+         </tr>
+         <tr>
+            <td>Email Address</td>
+            <td><input type="email" required name="email"></td>
+         </tr>
+         <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+         </tr>
+
+         <tr>
+            <td>Gender</td>
+            <td>
+               <input type="radio" id="male" name="gender">
+               <label for="male">Male</label>
+               <input type="radio" id="female" name="gender">
+               <label for="female">Female</label>
+            </td>
+         </tr>
+         <tr>
+            <td>Address</td>
+            <td><textarea name="address"></textarea></td>
+         </tr>
+         <tr>
+            <td>Price range</td>
+            <td><input type="range" name="pricerange" step="10" min="0" max="100"></td>
+         </tr>
+         <tr>
+            <td><input type="submit"></td>
+            <td><input type="reset"></td>
+         </tr>
+      </table>
+   </form>
+</body>
+
+</html>
