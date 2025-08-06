@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: darkgreen;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: brown;
+            background-color: lightgray;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a:visited{
+            color: pink;
+        }
+
+        div{
+            width: 200px;
+            background-color: blueviolet;
+            color: white;
+        }
+        
+        div:hover p{
+           background-color: black;
+           display: block;
+        }
+        p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <p>
+        There are four pseudo classes - 
+    </p>
+    <ol>
+        <li>Link</li>
+        <li>Active</li>
+        <li>Visited</li>
+        <li>Hover</li>
+    </ol>
+
+    <p>Syntax to apply pseudo class</p>
+    <pre>
+        selector:pseudo_class_name{
+            property1:value;
+            property2:value;
+            ...
+            propertyN:value;
+        }
+    </pre>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.amazon.in">Amazon</a>
+
+    <div>
+        <p>
+            Computer is a device for computation.
+        </p>
+        <img width="200px" src="coder.jpg" alt="">
+        
+    </div>
+</body>
+</html>
