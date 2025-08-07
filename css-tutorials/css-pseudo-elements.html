@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1::first-letter{
+            font-size: 48px;
+            color: red;
+        }
+
+        #p2::first-line{
+            font-size: 24px;
+            color: blue;
+        }
+
+        p::before{
+            content:"Welcome..."
+        }
+
+        p::after{
+            content:"...GoodBye"
+        }
+
+        ul li::marker{
+            color: hotpink;
+        }
+
+
+        ::selection{
+            background: rgb(212, 0, 0);
+            color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Pseudo Elements</h2>
+    <h6>Syntax</h6>
+    <pre>
+        selector::pseudo_element_name{
+            property1:value;
+            property2:value;
+            ...
+            propertN:value;
+        }
+    </pre>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, alias aliquam vel omnis ducimus eaque, ad,
+        voluptas doloremque eveniet dignissimos odit reiciendis commodi accusantium delectus ut numquam facere. Soluta
+        ad earum a beatae vero nemo distinctio, ex laborum delectus. Officiis id totam explicabo ad dicta fugiat
+        similique nam nesciunt optio!
+    </p>
+    <p id="p2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet maiores, veniam autem beatae ullam accusantium
+        consequuntur, a expedita vitae pariatur incidunt velit esse ducimus molestiae suscipit qui obcaecati fugiat
+        quod.
+    </p>
+    <p id="p3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quasi veritatis at eos aliquam aperiam
+        esse consectetur rerum rem incidunt impedit laborum tempore voluptatem, nemo animi cupiditate veniam. Deserunt,
+        veritatis?
+    </p>
+
+    <ol>
+        <li>Marker Pen</li>
+        <li>White Board</li>
+        <li>Duster</li>
+        <li>Chalk</li>
+        <li>Screen</li>
+        <li>Computer</li>
+    </ol>
+
+    <ul>
+        <li>Marker Pen</li>
+        <li>White Board</li>
+        <li>Duster</li>
+        <li>Chalk</li>
+        <li>Screen</li>
+        <li>Computer</li>
+    </ul>
+</body>
+
+</html>
