@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        #d1{
+            background-image: repeating-linear-gradient(to top left,rgb(255, 0, 55) 10%,rgb(174, 0, 255) 20%);
+        }
+
+        #d2{
+            background-image: repeating-radial-gradient(orange 10%,blue 20%,green 30%);
+            border-radius: 50%;
+        }
+
+        #d3{
+            background-image: conic-gradient(blue 0deg,blue 90deg,green 90deg, green 180deg,red 180deg );
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Types of Gradients</h3>
+    <ol>
+        <li>Linear Gradient</li>
+        <li>Radial Gradient</li>
+        <li>Conic Gradient</li>
+    </ol>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+
+</html>
