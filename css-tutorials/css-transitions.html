@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        #d1 {
+            background-image: url('coder.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: background-image 3s, border-radius 1s;
+            transition-delay: 2s;
+            transition-timing-function: ;
+        }
+
+        #d1:hover {
+            background-image: url('hotel.jpg');
+            border-radius: 50%;
+        }
+
+        #d2{
+            background-color: red;
+            border: 2px solid black;
+            transition: background-color 1s, border-radius 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        #d2:hover {
+            background-color:skyblue;
+            border-radius: 50%;
+        }
+
+        #d3{
+            padding: 0;
+            margin: auto;
+            background-image: url('coder.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #d3 p{
+            position: relative;
+            top: 90%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgba(255, 255, 255, 0);
+            transition: visibility 2s, transform 1s;
+            visibility: hidden;
+            transform: translateX(-200px);
+        }
+        
+        #d3:hover p{
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgba(255, 255, 255);
+            transform:translateX(0px);
+            visibility:visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+
+    <div id="d3">
+        <p>Image of coder</p>
+    </div>
+</body>
+
+</html>
