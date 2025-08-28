@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --padding: 8px;
+            --margin: 20px;
+            --ftfamily: Arial;
+            --border_rad: 8px;
+            --hdimension: 300px;
+            --vdimension: 100px;
+            --fontcolor: #66d26f;
+        }
+
+        .light-theme {
+            /* light-theme */
+            --backgroundclr: rgb(8, 16, 53);
+        }
+
+        .dark-theme {
+            /* dark-theme */
+            --backgroundclr: aliceblue;
+        }
+
+        body.light-theme {
+            background-color: aliceblue;
+        }
+        body.dark-theme {
+            background-color: rgb(8, 16, 53);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        h2 {
+            margin: var(--margin);
+            color: var(--fontcolor);
+            font-family: var(--ftfamily);
+            padding: var(--padding);
+        }
+
+        div {
+            margin: var(--margin);
+            background-color: var(--backgroundclr);
+            color: var(--fontcolor);
+            padding: var(--padding);
+            font-family: var(--ftfamily);
+            border-radius: var(--border_rad);
+        }
+
+        #d2 {
+            width: var(--hdimension);
+            height: var(--vdimension);
+        }
+    </style>
+</head>
+
+<body class="light-theme">
+    <h2>Lorem, ipsum dolor.</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam error ex natus dignissimos itaque animi
+        distinctio atque blanditiis consequuntur amet!
+    </div>
+    <div id="d2"></div>
+
+    <button onclick="changeTheme()">Day / Night</button>
+</body>
+<script>
+    var day = true;
+
+    function changeTheme() {
+        if (day) {
+            var body = document.querySelector('body')
+            body.setAttribute('class', 'dark-theme')
+            console.log(body)
+            day = !day
+        } else {
+            var body = document.querySelector('body')
+            body.setAttribute('class', 'light-theme')
+            day = !day
+        }
+        
+    }
+</script>
+
+</html>

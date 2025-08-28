@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @keyframes demo {
+            from {
+                background-color: rgb(24, 129, 94);
+            }
+
+            to {
+                background-color: rgb(129, 24, 94);
+                transform: translate(500px, 200px) scale(2);
+
+            }
+        }
+
+        @keyframes myanimation {
+            0% {
+                background-color: rgb(24, 129, 94);
+            }
+
+            25% {
+                background-color: rgb(129, 24, 94);
+                transform: translate(200px, 200px) scale(2);
+                /* border-radius: 25%; */
+            }
+
+            50% {
+                background-color: rgb(24, 94, 129);
+                transform: rotateY(180deg);
+                /* border-radius: 50%; */
+            }
+
+            100% {
+                background-color: rgb(192, 236, 30);
+                /* border-radius: 0%; */
+                transform: scaleX(2);
+            }
+        }
+
+        div {
+            padding: 8px;
+            background-color: rgb(24, 129, 94);
+            color: white;
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+        div:hover {
+            animation-name: myanimation;
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div>CSS Animations</div>
+</body>
+
+</html>
