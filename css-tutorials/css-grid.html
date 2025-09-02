@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .container{
+            background-color: rgb(53, 150, 118);
+            padding: 8px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .child{
+            background-color: rgb(221, 190, 142);
+            margin: 8px;
+        }
+
+        .child>img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <img src="hotel.jpg" alt="">
+        </div>
+        <div class="child"><img src="hotel.jpg" alt=""></div>
+        <div class="child"><img src="hotel.jpg" alt=""></div>
+        <div class="child"><img src="hotel.jpg" alt=""></div>
+        <div class="child"><img src="hotel.jpg" alt=""></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
