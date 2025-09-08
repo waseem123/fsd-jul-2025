@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var choice = parseInt(prompt('1. ADDITION \n2. SUBTRACTION \n3. MULTIPLICATION \nENTER YOUR CHOICE - '))
+    var x = 100
+    var y = 50
+    var z = 0
+    switch (choice) {
+        case 1:
+            z = x + y
+            document.write(`ADDITION OF ${x} AND ${y} IS ${z}`)
+            break;
+        case 2:
+            z = x - y
+            document.write(`SUBTRACTION OF ${x} AND ${y} IS ${z}`)
+            break;
+        case 3:
+            z = x * y
+            document.write(`MULTIPLICATION OF ${x} AND ${y} IS ${z}`)
+            break; 
+
+        default:
+            document.write('WRONG INPUT! PLEASE ENTER THE CHOICE BETWEEN 1 TO 3.')
+            break;
+    }
+</script>
+
+</html>
