@@ -44,9 +44,32 @@
         document.write('My name is Waseem<br>')
         document.write('I live in Solapur<br>')
         document.write('I am an engineer<br>')
-        document.write('I teach people<br>')
+        document.write('I teach people<hr>')
     }
 
     displayInfo()
+
+    function add(fnum,snum){
+        document.write(`ADDITION OF ${fnum} AND ${snum} IS ${fnum+snum}<hr>`)
+    }
+    add(36,84)
+    add(30,44)
+    add(25,98)
+
+    function getTime(){
+        var date = new Date()
+        return date
+    }
+
+    var datetime = getTime()
+    document.write(`${datetime}<hr>`)
+    // document.write(getTime())
+
+    function areaOfCircle(radius=0){
+        return 3.14 * radius * radius
+    }
+
+    document.write(`${areaOfCircle(3)}<hr>`)
+    document.write(`${areaOfCircle()}<hr>`)
 </script>
 </html>
